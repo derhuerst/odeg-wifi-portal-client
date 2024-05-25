@@ -1,0 +1,43 @@
+{
+	"name": "odeg-wifi-portal-client",
+	"description": "A client for the WiFi passenger information portal in German ODEG trains.",
+	"version": "1.0.0",
+	"type": "module",
+	"main": "index.js",
+	"files": [
+		"index.js",
+		"lib",
+		"demo.js"
+	],
+	"keywords": [
+		"regio",
+		"re",
+		"regional",
+		"odeg",
+		"train",
+		"wifi"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/odeg-wifi-portal-client",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/derhuerst/odeg-wifi-portal-client.git"
+	},
+	"bugs": "https://github.com/derhuerst/odeg-wifi-portal-client/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=20"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.0.0",
+		"eslint": "^9.0.0",
+		"globals": "^15.0.0"
+	},
+	"scripts": {
+		"test": "env NODE_ENV=dev node --test",
+		"lint": "eslint .",
+		"prepublishOnly": "npm run lint && npm test"
+	}
+}
