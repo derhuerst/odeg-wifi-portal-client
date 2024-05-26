@@ -1,7 +1,11 @@
 import test from 'node:test'
+import {ok} from 'node:assert'
+import {
+	fetchTripStatus,
+} from '../index.js'
 
-import {todo} from '../index.js'
-
-test('todo', (t) => {
+test('fetchTripStatus() works', async (t) => {
+	const trip = await fetchTripStatus()
 	// todo
+	ok(trip)
 })

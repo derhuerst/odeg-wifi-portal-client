@@ -1,3 +1,5 @@
-import {todo} from './index.js'
+import {
+	fetchTripStatus,
+} from './index.js'
 
-// todo
+console.log('trip', await fetchTripStatus())
